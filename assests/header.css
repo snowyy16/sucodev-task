@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    color: aliceblue;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo{
+    color: #2e81ff;
+    font-weight: 600;
+    font-size: 25px;
+}
+.nav-item{
+    text-decoration: none;
+    color: inherit;
+}
+.nav-item:hover {
+    color: #2e81ff;
+}
+nav{
+    display: flex;
+    gap:20px
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assests/calculate.css">
+    <title>Phương trình bậc hai</title>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+          <h1>PHƯƠNG TRÌNH BẬC HAI</h1>
+        </header>
+    <form class="ptb2">
+      <div>
+        <label for="a">Nhập a: </label>
+        <input type="text" id="a" placeholder=" a " />
+      </div>
+      <div style="margin-top: 24px; margin-bottom: 36px">
+        <label for="b">Nhập b: </label>
+        <input type="text" id="b" placeholder=" b " />
+      </div>
+      <div style="margin-top: 24px; margin-bottom: 36px">
+        <label for="c">Nhập c: </label>
+        <input type="text" id="c" placeholder=" c " />
+      </div>
+      <div style="margin-top: 24px; margin-bottom: 36px">
+        <label for="result1">X1: </label>
+        <input type="text" id="result1" placeholder=" x1 " readonly />
+      </div>
+      <div style="margin-top: 24px; margin-bottom: 36px">
+        <label for="result2">X2: </label>
+        <input type="text" id="result2" placeholder=" x2 " readonly />
+      </div>
+      <button type="button" id="btn" onclick="calculate()">Calculate</button>
+    </form>
+  </body>
+    </div>
+  <script>
+    let btn = document.getElementById("btn");
+
+    let aInp = document.getElementById("a");
+    let bInp = document.getElementById("b");
+    let cInp = document.getElementById("c");
+
+    let result1 = document.getElementById("result1");
+    let result2 = document.getElementById("result2");
+
+    function calculate() {
+      const a = parseFloat(aInp.value);
+      const b = parseFloat(bInp.value);
+      const c = parseFloat(cInp.value);
+
+      if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        alert("Vui lòng nhập đúng giá trị cho a, b và c.");
+        return;
+      }
+
+      const delta = b * b - 4 * a * c;
+
+      if (delta < 0) {
+        result1.value = "Vô nghiệm";
+        result2.value = "Vô nghiệm";
+      } else if (delta === 0) {
+        const x = -b / (2 * a);
+        result1.value = x;
+        result2.value = x;
+      } else {
+        const x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        const x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        result1.value = x1;
+        result2.value = x2;
+      }
+    }
+  </script>
+</html>
