@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <style>
+    input {
+      outline: none;
+    }
+    html {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <body>
+    <div class="w-full min-h-screen">
+      <div class="flex">
+        <!--left-->
+        <div class="flex-1 flex justify-center items-center">
+          <form action="">
+            <h1 class="font-medium text-[32px]">Welcome Back</h1>
+            <h2 class="font-medium text-base">
+              Enter your Credentials to access your account
+            </h2>
+
+            <!--Input Field-->
+            <div class="mt-[60px]">
+              <label for="" class="font-medium text-sm">Email address:</label>
+              <input
+                class="block pl-[10px] border border-[#D9D9D9] rounded-[10px] h-8 w-[404px]"
+                type="email"
+                name=""
+                id=""
+                placeholder="Enter your Email"
+              />
+            </div>
+            <div class="mt-[24px]">
+              <div class="justify-between flex">
+                <label for="" class="font-medium text-sm">Password:</label>
+                <p class="text-[10px] font-medium text-[#0C2A92]">
+                  forger password
+                </p>
+              </div>
+              <input
+                class="block pl-[10px] border border-[#D9D9D9] rounded-[10px] h-8 w-[404px]"
+                type="password"
+                name=""
+                id=""
+                placeholder="Enter your password"
+              />
+            </div>
+
+            <!--End Input Field-->
+            <div class="flex gap-[6px] mt-5">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-[9px] font-medium"
+                >Remeber for 30 days</label
+              >
+            </div>
+            <button
+              class="h-8 w-[404px] text-white font-bold text-[13px] bg-[#3A5B22] rounded-[10px] mt-5"
+            >
+              Login
+            </button>
+            <div class="flex w-full items-center gap-[3px]">
+              <div class="flex-1 border-b border-b-[#F5F5F5]"></div>
+              <div class="font-medium text-[9px] mt-5">or</div>
+              <div class="flex-1 border-b border-b-[#F5F5F5]"></div>
+            </div>
+            <!-- logo gg,apple -->
+            <div class="mt-[89px] flex gap-[23px]">
+              <div
+                class="flex justify-center items-center h-8 w-[190px] border border-[#D9D9D9] rounded-[10px]"
+              >
+                <img src="./assests/img/google.png" alt="" />
+                <p class="font-medium text-xs">Sign up with Google</p>
+              </div>
+              <div
+                class="flex justify-center items-center h-8 w-[190px] border border-[#D9D9D9] rounded-[10px]"
+              >
+                <img src="./assests/img/apple.png" alt="" />
+                <p class="font-medium text-xs">Sign up with Apple</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-3">
+              <P>Don't have an account? <P class="font-medium text-[#0C2A92]">Sign Up</P></P>
+            </div>
+          </form>
+        </div>
+        <!--right-->
+        <div class="flex-1 max-md:hidden">
+          <img src="./assests/img/FE.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

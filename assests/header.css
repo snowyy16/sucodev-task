@@ -3,8 +3,8 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: transparent;
-    color: aliceblue;
+    background-color: #1b1f25;
+    color: rgb(112, 184, 247);
     width: 100%;
     height: 56px;
     align-items: center;
@@ -27,4 +27,9 @@ header{
 nav{
     display: flex;
     gap:20px
+}
+@media screen and (max-width:800px) {
+   .nav-item{
+    flex-direction: column;
+   }
 }
