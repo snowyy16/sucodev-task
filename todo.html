@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div>
+      <div class="flex">
+        <!-- column -->
+        <div class="w-[400px]">
+          <!-- header -->
+          <div class="bg-blue-500 flex justify-between px-4 text-white">
+            <p>Todo</p>
+            <p id="todo-count">0</p>
+          </div>
+
+          <!-- divider -->
+          <div class="w-full border-b-2 border-b-blue-600 mt-2"></div>
+
+          <!-- list -->
+          <div id="todo"></div>
+        </div>
+
+        <!-- column -->
+        <div class="w-[400px]">
+          <!-- header -->
+          <div class="bg-blue-500 flex justify-between px-4 text-white">
+            <p>doing</p>
+            <p>0</p>
+          </div>
+
+          <!-- divider -->
+          <div class="w-full border-b-2 border-b-blue-600 mt-2"></div>
+
+          <!-- list -->
+          <div id="doing"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
